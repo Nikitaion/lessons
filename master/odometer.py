@@ -9,5 +9,3 @@ def odometer(oksana):
             sum = sum + kmh * (num - lastHour)
             lastHour = num
     return sum
-mas = [10, 1, 20, 2, 5, 4]
-print(odometer(mas))
