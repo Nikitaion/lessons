@@ -2,10 +2,11 @@ def odometer(oksana):
     kmh = 0
     sum = 0
     lastHour = 0
-    for num in oksana:
-        if (oksana.index(num) % 2 == 0):
-            kmh = num
+    for index, value in enumerate(oksana):
+        if (index % 2 == 0):
+            kmh = value
         else:
-            sum = sum + kmh * (num - lastHour)
-            lastHour = num
+            sum = sum + kmh * (value - lastHour)
+            lastHour = value
+
     return sum
