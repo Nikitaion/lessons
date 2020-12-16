@@ -2,9 +2,6 @@ def ConquestCampaign(N, M, L, battalion):
     day = 1
     notAllFieldColoured = True
 
-    if(N == 1 and M == 1):
-        return day
-
     battleground = []
     for i in range(1, N+1):
         newList = [0] * M
@@ -26,6 +23,16 @@ def ConquestCampaign(N, M, L, battalion):
             even = True
         battleground[X][Y] = 1
     
+    needStopInFirstDay = True
+    for indexFullList, valueFullList in enumerate(battleground): #check for first day
+            for indexSubList, valueSubList in enumerate(valueFullList):
+                if (valueSubList == 0):
+                    needStopInFirstDay = False
+                    break
+
+    if(needStopInFirstDay):
+        return day
+
     listForNextPaint = []
     while notAllFieldColoured:
         for indexFullList, valueFullList in enumerate(battleground):
