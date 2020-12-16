@@ -1,4 +1,4 @@
-def Telesort(N, Tele):
+def MadMax(N, Tele):
     Tele.sort()
     
     middlePoint = int((N - 1) / 2 + 1)
