@@ -13,12 +13,12 @@ def SynchronizingTables(N, ids, salary):
         for salaryIndex, salaryValue in enumerate(salaryWithIds):
             addToList = False
             for index, value in enumerate(salaryValue):
+                if (addToList == True):
+                    newSalaryList.append(value)
+                    addToList = False
+                    continue
                 if (value == idsValue):
                     addToList = True
                     continue
 
-                if (addToList == True):
-                    newSalaryList.append(value)
-                    addToList = False
-                    
     return newSalaryList
