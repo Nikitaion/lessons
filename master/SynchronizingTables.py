@@ -21,4 +21,10 @@ def SynchronizingTables(N, ids, salary):
                     addToList = True
                     continue
 
+
+                    
+                    #Можно попробовать удалять из второго списка значения которые уже добавлены
     return newSalaryList
+
+ч = SynchronizingTables(4,[10,67,68,28],[55,73,10,6])
+print(ч)
