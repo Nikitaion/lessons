@@ -31,6 +31,8 @@ def PatternUnlock(N, hits):
             result += 1.4142135623730951
         else:
             result += 1
+        
+        previousNumber = currentNumber
 
     result = round(result, 5)
 
