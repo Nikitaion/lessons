@@ -38,6 +38,6 @@ def PatternUnlock(N, hits):
 
     result = float(str(result).replace('0',''))
     result = int(str(result).replace('.',''))
-    result = int(str(result).replace('0',''))
+    result = str(result).replace('0','')
 
     return result
