@@ -70,4 +70,5 @@ def TheRabbitsFoot(s, encode):
                 x = 0
                 y += 1
 
+    result = result.strip()
     return result
