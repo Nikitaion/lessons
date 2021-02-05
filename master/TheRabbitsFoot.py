@@ -1,4 +1,4 @@
-def TheRabbitsFootTrue(s, encode):
+def TheRabbitsFoot(s, encode):
     #s - string
     #encode - bool value. If True - need encode. If False - need decode
     result = ''
