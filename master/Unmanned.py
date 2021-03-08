@@ -11,6 +11,12 @@ def Unmanned(L, N, track):
    for list in track:
        for element in list:
            if point_dict == 0:
+
+               if current_location == 0:
+                   if element > L:
+                       result = L
+                       return result
+
                result += element - current_location #ride to next traffic light
                current_location = element
                traffic_light_time = result
@@ -45,3 +51,7 @@ def Unmanned(L, N, track):
    result += L - current_location
 
    return result
+
+
+
+print(Unmanned(10, 2, [[11,5,5],[15,2,2]])) #10
