@@ -1,5 +1,5 @@
 def LineAnalysis(line):
-    result = True
+    result = False
     pattern = ''
 
     symbolNum = 1
@@ -10,14 +10,13 @@ def LineAnalysis(line):
             pattern += line[symbolNum]
             symbolNum += 1
         except:
-            result = False
             break
     lineForCompare = '*'
     while len(lineForCompare) < len(line):
         lineForCompare += pattern
         lineForCompare += '*'
 
-    if lineForCompare != line:
-        result = False
+    if lineForCompare == line:
+        result = True
 
     return result
