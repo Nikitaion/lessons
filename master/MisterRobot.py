@@ -12,5 +12,3 @@ def MisterRobot(N, data):
             if data[i] > data[i+1]:
                 per = 0
         if per == 1 or per == 0: return result[per]
-
-MisterRobot(7, [1,3,4,5,6,2,7])
