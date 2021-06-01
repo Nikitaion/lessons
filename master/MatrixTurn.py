@@ -1,7 +1,6 @@
 def MatrixTurn(Matrix, M, N, T):
     for a in range(M):
         Matrix[a] = list(Matrix[a])
-    print(Matrix)
     if M <= N:
         circles = M // 2
     else:
